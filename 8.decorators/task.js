@@ -7,7 +7,7 @@ function cachingDecoratorNew(func) {
 		const hash = args.join(',');
 		for (let i = 0; cache.length > i; i++) {
 			if (cache[i].hash === hash) {
-				return 'Из кэша: ' + cache[i].value;
+				return 'Из кеша: ' + cache[i].value;
 			}
 		}
 		const result = func(...args);
